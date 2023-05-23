@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: about
 title: About
 ---
 
-This is an example page!
+Hi!
 
-Actually, it has the same layout of a post...
+Welcome to "The Flipping Bit". My name is Arthur Rocha, I'm a software developer by trade.
+This blog is a small space where i intend to share some knowledge regarding computer and programming.

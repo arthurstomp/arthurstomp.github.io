@@ -1,11 +1,23 @@
 <script type="text/javascript">
   window.addEventListener('load', themeChange);
   const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-  if (currentTheme)
+  if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
+  }
+
+  let setSvgFill = (ct) => {
+    const svgs = Array.from(document.getElementsByClassName('profile-svg'))
+    if (ct === 'dark') {
+      svgs.map(el => el.classList.add('dark'))
+    } else {
+      svgs.map(el => el.classList.remove('dark'))
+    }
+  }
+
 
   function themeChange() {
     let button = document.querySelector('.theme-toggle');
+    setSvgFill(currentTheme)
 
     button.addEventListener('click', function (e) {
       let currentTheme = document.documentElement.getAttribute('data-theme');
@@ -13,10 +25,12 @@
         transition();
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
+        setSvgFill('light')
       } else {
         transition();
         document.documentElement.setAttribute('data-theme', 'dark');
         localStorage.setItem('theme', 'dark');
+        setSvgFill('dark')
       }
     });
 

@@ -1,0 +1,30 @@
+.profile {
+  &-abs-wrapper {
+    position: absolute;
+  }
+  &-rel-wrapper {
+    position: relative;
+    right: 351px;
+    bottom: 50px;
+  }
+  &-image {
+    position: relative;
+  }
+
+  &-link {
+    display: flex;
+    margin: 0 25%;
+  }
+
+  &-svg {
+    width: 20px;
+    height: 20px;
+    fill: black;
+    margin-right: 10px;
+    padding-top: 5px;
+
+    &.dark {
+      fill: white;
+    }
+  }
+}
