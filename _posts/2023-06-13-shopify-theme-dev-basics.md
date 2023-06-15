@@ -207,7 +207,7 @@ This new section will appear as available on the "+ Add Section" menu with the n
 
 You can replace the "main-product" by "xmas-product" on the editor and pull the changes. Or just update the `templates/product.xmas.json` changing `"type": "main-product",` by `"type": "xmas-product",`.
 
-Note on the right side, while highlighting "Xmas Product Info" section, that there is a new setting on it, "Sides background image". That is the input for `{{sections.settings.sides_background_image}}` object. We will be using it to customize the section.
+Note on the right side, while highlighting "Xmas Product Info" section, that there is a new setting on it, "Sides background image". That is the input for `\{\{sections.settings.sides_background_image\}\}` object. We will be using it to customize the section.
 
 *xmas-product.liquid*
 
